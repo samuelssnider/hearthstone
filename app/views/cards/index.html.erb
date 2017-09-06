@@ -1,0 +1,6 @@
+<h1>Cards:</h1>
+<% @cards.each do |card| %>
+	<% if card.cardtype == "MINION" %>
+		<%= card.name %> <%= card.set %> <%= card.cost %> <%= card.attack %>/<%= card.health %> <br />
+	<% end %>
+<% end %>
